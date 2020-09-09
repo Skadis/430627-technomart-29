@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Skadi](https://up.htmlacademy.ru/htmlcss/29/user/430627).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Корбут](https://up.htmlacademy.ru/htmlcss/29/user/31739).
 
 ---
 
