@@ -53,12 +53,10 @@ img {
 
 .button:active {
   background-color: var(--dark-red);  
-
 }
 
 .section-header {
   background-color: var(--blue-gray);
-
 }
 
 .title {
@@ -70,7 +68,7 @@ img {
 }
 
 .title-black {
- color: var(--black);
+  color: var(--black);
 }
 
 .new-block {
@@ -201,13 +199,12 @@ img {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
-
 .features-item {
   background-color:var(--orange);
   font-family: 'Cuprum', sans-serif;
   font-weight: bold;
   font-size: 24px;
-	line-height: 30px;
+  line-height: 30px;
   color:white;
 }
 
@@ -344,7 +341,6 @@ img {
   font-size: 13px;
   line-height: 24px;
 }
-
 
 .benefits-list {
   font-family: 'Cuprum', sans-serif;
