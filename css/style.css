@@ -227,7 +227,7 @@ img {
   color: var(--white);
 }
 
-.slider-text {
+.features-slider-content {
   background-color: var(--black);
   opacity: 0.25;
 }
@@ -250,7 +250,7 @@ img {
   list-style: none;
 }
 
-.catalog-text {
+.catalog-block {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
 }
@@ -280,32 +280,32 @@ img {
   text-transform: uppercase;
 }
 
-.button-buy {
+.catalog-button-buy {
   background-color: var(--dark-green);
   color: var(--white);
   border: none;
 }
 
-.button-buy:hover {
+.catalog-button-buy:hover {
   background-color: var(--green);
 }
 
-.button-buy:active {
+.catalog-button-buy:active {
   background-color: var(--darker-green);
 }
 
-.button-bookmark {
+.catalog-button-bookmark {
   background-color: var(--white);
   border: 3px solid var(--dark-green);
   border-radius: 2px;
   color: var(--basic-blue);
 }
 
-.button-bookmark:hover {
+.catalog-button-bookmark:hover {
   border: 3px solid var(--basic-blue);
 }
 
-.button-bookmark:active {
+.catalog-button-bookmark:active {
   opacity: 0.5;
 }
 
