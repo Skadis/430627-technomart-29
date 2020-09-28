@@ -77,6 +77,10 @@ img {
   background-color: var(--blue-gray);
 }
 
+.section-header-gray {
+  background-color: var(--gray); 
+}
+
 .title {
   color: var(--basic-blue);
   font-size: 30px;
@@ -455,24 +459,19 @@ img {
 
 /* Catalog */
 
-.page-title {
-  background-color: var(--gray);
-  color: var(--basic-blue);
-  text-transform: uppercase;
-}
-
-.page-title h1 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.catalog-title {
+.content-title {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
   color: var(--black); 
+  background-color: var(--white-orange);
+}
+
+.content-title h2 {
+  font-size: 13px;
+  font-weight: normal;  
 }
 
 /* breadcrumbs */
@@ -489,17 +488,7 @@ img {
   color: var(--black);  
 }
 
-/* filter */
-
-.filter {
-  background-color: var(--white-orange);
-}
-
 /* sort */
-
-.sort {
-  background-color: var(--white-orange); 
-}
 
 .sort-name-item {
  border-bottom: 1px dotted var(--light-red); 
