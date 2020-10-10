@@ -1,4 +1,3 @@
-
 :root {
   --white: #FFF;
   --white-opacity: rgba(0, 0, 0, 0.24);
@@ -151,7 +150,6 @@ img {
 /* Header */
 
 .main-header {
-  margin-bottom: 59px;
   background-color: var(--gray);
 }
 
@@ -213,10 +211,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 38px 0 40px 0;
 }
 
 .header-subtitle {
-  margin-left: 30px; 
+  margin-left: 30px;
   font-size: 16px;
   line-height: 23px;
   color: var(--light-red);
@@ -320,7 +319,7 @@ img {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  margin-bottom: 59px;
+  margin: 59px 0;
 }
 
 .features-button {
@@ -421,6 +420,10 @@ img {
   margin-bottom: 70px;
 }
 
+.page-catalog .catalog {
+  width: 700px;
+}
+
 .catalog-list {
   /*display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -438,6 +441,7 @@ img {
 
 .catalog-item {
   width: 220px;
+  margin-bottom: 18px;
   border: 1px solid var(--border-light-gray);
 }
 
@@ -683,6 +687,7 @@ img {
 
 .about-block {
   /*justify-self: end;*/
+  display: flex;
 }
 
 .about-block p {
@@ -714,7 +719,14 @@ img {
 /* Breadcrumbs */
 
 .breadcrumbs {
+  display: flex;
+  margin: 20px 0;
+  padding: 0;
   list-style: none;
+}
+
+.breadcrumbs-item {
+  margin-right: 40px;
 }
 
 .breadcrumbs-item, .breadcrumbs-item a {
@@ -730,16 +742,34 @@ img {
 .content-block {
   /*display: grid;
   grid-template-columns: 220px 1fr; */
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 59px;
 }
 
 /* Filter */
 
 .filter {
+  width: 220px;
   margin-right: 20px;
 }
 
 /* Sort */
+
+.sort {
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 20px
+}
+
+.sort-title {
+  margin: 0;
+}
+
+.sort-name {
+  display: flex;
+  justify-content: space-around;
+}
 
 .sort-item {
   border-bottom: 1px dotted var(--light-red); 
@@ -759,11 +789,20 @@ img {
 /* Pagination */
 
 .pagination-list {
+  display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .pagination-item {
+  margin-right: 10px;
+  padding: 10px 15px;
   border: 1px solid var(--lighter-white-gray);
+  border-radius: 2px;
+}
+
+.pagination-item:last-child {
+  padding: 10px 32px;
 }
 
 .pagination-item:hover {
@@ -775,13 +814,19 @@ img {
 }
 
 .pagination-item a {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   color: var(--black);
   text-transform: uppercase;
 }
 
+.pagination-item-current {
+  background-color: var(--light-red);
+}
+
 .pagination-item-current a {
   color: var(--white);
-  background-color: var(--light-red);
 }
 
 /* About product */
