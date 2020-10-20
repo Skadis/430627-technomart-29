@@ -18,20 +18,21 @@
               <img src="img/logo.svg" width="108" height="18" alt="Логотип интернет-магазин строительных материалов «Техномарт»">
             </a>
             <form action="#" method="post" class="search">
-              <input type="search" placeholder="Поиск:" class="search-field">
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input type="search" placeholder="Поиск:" name="search" id="search" class="search-field">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon" aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
               </svg>
             </form>
           </div>
           <div class="main-header-top-right">
-            <a href="" class="header-button bookmark">
-              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="header-button bookmark" aria-label="Перейти на страницу закладки">
+              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
               </svg>
               <span>Закладки: <span class="count">0</span></span></a>
-            <a href="" class="header-button cart">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="header-button cart" aria-label="Перейти на страницу корзина">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
                 <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
                 <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
@@ -51,12 +52,12 @@
             </i>
           </div>
           <div class="header-contacts">
-            <span class="header-phone">+7 (812) 555-05-55</span>
+            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="authorization">
             <a href="" class="authorization-button login">
-              <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="authorization-icon">
+              <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="authorization-icon" aria-hidden="true" focusable="false">
                 <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
                 <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
               </svg>
@@ -97,32 +98,33 @@
       <h1 class="visually-hidden">Интернет-магазин строительных материалов «Техномарт»</h1>
       <div class="container">
         <section class="features">
+          <h2 class="visually-hidden">Aссортимент и акции</h2>
           <ul class="features-list">
             <li class="features-item">
               <span class="features-item-name">Материалы</span>
-              <a href="" class="features-button">На любой вкус</a>
+              <a href="" class="features-button" aria-label="Перейти на страницу каталога с материалами">На любой вкус</a>
               <span class="new-label">new</span>
             </li>
             <li class="features-item">
               <span class="features-item-name">Инструмент</span>
-              <a href="" class="features-button">на все случаи</a>
+              <a href="" class="features-button" aria-label="Перейти на страницу каталога с инструментами">на все случаи</a>
             </li>
             <li class="features-item">
               <span class="features-item-name">Техника</span>
-              <a href="" class="features-button">Для стройки</a>
+              <a href="" class="features-button" aria-label="Перейти на страницу каталога с техникой">Для стройки</a>
             </li>
             <li class="features-item">
               <span class="features-item-name">Скидки 50%</span>
-              <a href="" class="features-button">На 350 товаров</a>
+              <a href="" class="features-button" aria-label="Перейти на страницу каталога с товарами со скидкой">На 350 товаров</a>
             </li>
             <li class="features-item">
               <span class="features-item-name">Доставка</span> 
-              <a href="" class="features-button">Бесплатно</a>
+              <a href="" class="features-button" aria-label="Перейти на страницу доставки">Бесплатно</a>
             </li>
           </ul>
           <div class="features-slider">
             <ul class="features-slider-list">
-              <li class="features-slider-item">
+              <li class="features-slider-item active-slide">
                 <div class="features-slider-content">
                   <h3 class="features-slider-title">Перфораторы</h3>
                   <p class="features-slider-subtitle">Настоящие мужские игрушки</p>
@@ -130,14 +132,14 @@
                 <a href="catalog.html" class="button features-slider-button">Открыть каталог</a>
                 <img src="img/slide_1.jpg" width="620" height="266" alt="Слайд перфораторы">
               </li>
-            <!--  <li class="features-slider-item">
+              <li class="features-slider-item">
                 <div class="features-slider-content">
                 <h3 class="features-slider-title">Дрели</h3>
                 <p class="features-slider-subtitle">Соседям на радость!</p>
                 </div>
                 <a href="catalog.html" class="button features-slider-button">Открыть каталог</a>
                 <img src="img/slide_2.jpg" width="620" height="266" alt="Слайд дрели">
-              </li>-->
+              </li>
             </ul>
             <button type="button" class="features-slider-arrow-right"></button>
             <button type="button" class="features-slider-arrow-left"></button>
@@ -160,7 +162,7 @@
               </div>
               <div class="catalog-buttons">
                 <button type="button" class="catalog-button catalog-button-buy">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon" aria-hidden="true" focusable="false">
                     <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
                     <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
@@ -181,7 +183,7 @@
               </div>
               <div class="catalog-buttons">
                 <button type="button" class="catalog-button catalog-button-buy">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon" aria-hidden="true" focusable="false">
                     <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
                     <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
@@ -203,7 +205,7 @@
               </div>
               <div class="catalog-buttons">
                 <button type="button" class="catalog-button catalog-button-buy">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon" aria-hidden="true" focusable="false">
                     <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
                     <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
@@ -224,7 +226,7 @@
               </div>
               <div class="catalog-buttons">
                 <button type="button" class="catalog-button catalog-button-buy">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-buy-icon" aria-hidden="true" focusable="false">
                     <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
                     <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
@@ -300,47 +302,43 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           </div>
-          <div action="#" method="get" class="services-slider">
-            <form class="services-slider-control">
-              <div class="services-slider-labels">
-                <label for="delivery" class="services-slider-label active">Доставка</label>
-                <label for="guarantee" class="services-slider-label">Гарантия</label>
-                <label for="сredit" class="services-slider-label">Кредит</label>
-              </div>
-              <input type="radio" id="delivery" checked="" class="visually-hidden"> 
-              <input type="radio" id="guarantee" class="visually-hidden">
-              <input type="radio" id="сredit" class="visually-hidden">
-            </form>
-            <div class="services-slider-items">
-              <div class="services-slider-item-first">
-                <div class="services-slider-content">
-                  <h3 class="title">Доставка</h3>
-                  <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо<br>
-                    к вашему подъезду совершенно бесплатно!<br>
-                    Ведь мы неплохо заработаем,<br>
-                    поднимая его на ваш этаж!
-                  </p>
-                </div>
-                <div class="services-slider-img"></div>
-              </div>
-              <!--<div class="services-slider-item-second">
-                <div class="services-slider-content">
-                  <h3 class="title">Гарантия</h3>
-                  <p class="services-slider-text">Если купленный у нас товар поломается или заискрит,<br>
-                  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены   в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p> 
-                </div>
-                <div class="services-slider-img"></div>
-              </div>
-               <div class="services-slider-item-third">
-                <div class="services-slider-content">
-                  <h3 class="title">Кредит</h3>
-                  <p class="services-slider-text">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p> 
-                  <a href="" class="button">Отправить заявку</a>
-                </div>
-                <div class="services-slider-img"></div>
-              </div>  -->
+          <form action="#" method="get" class="services-slider">
+            <input type="radio" id="delivery" name="services-slider-radio" class="visually-hidden" checked> 
+            <input type="radio" id="guarantee" name="services-slider-radio" class="visually-hidden">
+            <input type="radio" id="сredit" name="services-slider-radio" class="visually-hidden">
+            <div class="services-slider-labels">
+              <label for="delivery" class="services-slider-label">Доставка</label>
+              <label for="guarantee" class="services-slider-label">Гарантия</label>
+              <label for="сredit" class="services-slider-label">Кредит</label>
             </div>
-          </div>
+            <div class="services-slider-items services-slider-item-first">
+              <div class="services-slider-content">
+                <h3 class="title">Доставка</h3>
+                <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </div>
+              <div class="services-slider-img"></div>
+            </div>
+            <div class="services-slider-items services-slider-item-second">
+              <div class="services-slider-content">
+                <h3 class="title">Гарантия</h3>
+                <p class="services-slider-text">Если купленный у нас товар поломается или заискрит,<br>
+                а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены   в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p> 
+              </div>
+              <div class="services-slider-img"></div>
+            </div>
+            <div class="services-slider-items services-slider-item-third">
+              <div class="services-slider-content">
+                <h3 class="title">Кредит</h3>
+                <p class="services-slider-text">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p> 
+                <a href="" class="button">Отправить заявку</a>
+              </div>
+              <div class="services-slider-img"></div>
+            </div>
+          </form>  
         </div>
       </section>
 
@@ -368,10 +366,10 @@
               Вы можете забрать товар сами, 
               заехав в наш офис:
             </p>
-            <a href="">
+            <a href="" class="contacts-map">
               <img src="img/map.jpg" width="300" height="158" alt="Карта">
             </a>
-            <button type="button" class="button">Заблудились? Напишите нам!</button>
+            <button type="button" class="button button-feedback">Заблудились? Напишите нам!</button>
           </section>
         </section>
       </div>
@@ -382,7 +380,7 @@
       <div class="main-footer-top">
         <div class="container">
           <div class="main-footer-top-first">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" >
               <img src="img/logo.svg" width="138" height="23" alt="Логотип интернет-магазин строительных материалов «Техномарт»">
             </a>
             <ul class="footer-navigation-list">
@@ -404,8 +402,9 @@
             </ul>
           </div>
           <div class="main-footer-top-second">
-            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-              +7 (812) 555-05-55
+            <p class="footer-address">
+              <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+              <a href="tel:+78125550555">+7 (812) 555-05-55 </a>
              </p>
             <ul class="footer-navigation-list">
               <li class="footer-navigation-item">
@@ -434,7 +433,7 @@
             <li class="social-link-item">
               <a href="" class="social-link social-link-vk">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icon">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icon" aria-hidden="true" focusable="false">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
                   <path d="M24.5403 25.7281C25.4609 25.4384 26.6396 27.6406 27.8943 28.4834C28.8361 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8233 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.367 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7993 15.1128C22.3881 15.0153 22.0876 14.9516 21.039 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3576 15.9444C17.6079 15.9772 18.1693 16.0944 18.4698 16.4937C18.8559 17.0112 18.8444 18.1709 18.8444 18.1709C18.8444 18.1709 19.0649 21.3687 18.3244 21.7653C17.8159 22.0372 17.1207 21.4822 15.6252 18.9378C14.8616 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.7301 15.6116 13.393 15.5562 13.393 15.5562L9.81659 15.5787C9.81659 15.5787 9.27926 15.5937 9.08185 15.8244C8.90659 16.0287 9.06741 16.4506 9.06741 16.4506C9.06741 16.4506 11.8687 22.9016 15.0407 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4339 28.6437C23.6496 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.6101 26.0187 24.5403 25.7281Z" fill="white"/>
                 </svg>
@@ -443,7 +442,7 @@
             <li class="social-link-item">
               <a href="" class="social-link social-link-fb">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icon">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icon" aria-hidden="true" focusable="false">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
                   <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
                 </svg>
@@ -452,7 +451,7 @@
             <li class="social-link-item">
               <a href="" class="social-link social-link-instagram">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icon">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icon" aria-hidden="true" focusable="false">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
                 </svg>
@@ -462,11 +461,11 @@
           <div class="about-block">
             <p class="feedback">
               <span>Обратная связь:</span>
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо разрабочику">mail@htmlacademy.ru</a>
             </p>
             <p class="author">
               <span>Разработано —</span>
-              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт разработчика">htmlacademy.ru</a>
             </p>
         </div>
         </div>
@@ -479,15 +478,15 @@
         <div class="feedback-form-container">
           <p class="feedback-form-item">
             <label class="feedback-form-label" for="feedback-name">Ваше имя:</label>
-            <input class="feedback-form-field" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="feedback-form-field feedback-field-name" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="feedback-form-item">
             <label class="feedback-form-label" for="feedback-email">Ваш e-mail:</label>
-            <input class="feedback-form-field" id="feedback-email" type="email" name="email" placeholder="email@example.com">
+            <input class="feedback-form-field feedback-field-email" id="feedback-email" type="email" name="email" placeholder="email@example.com">
           </p>
           <p class="feedback-form-item">
             <label class="feedback-form-label" for="feedback-message">Текст письма:</label>
-            <input class="feedback-form-field" id="feedback-message" type="text" name="message" placeholder="В свободной форме">
+            <input class="feedback-form-field feedback-field-message" id="feedback-message" type="text" name="message" placeholder="В свободной форме">
           </p>
         </div>
         <div class="modal-buttons">
@@ -502,7 +501,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625305689!2d30.32085335189572!3d59.93871916896493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602667386453!5m2!1sru!2sru" width="943" height="439" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-
 
   </body>
 </html>
