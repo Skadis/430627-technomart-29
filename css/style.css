@@ -29,6 +29,7 @@
   --basic-blue: #32425C;
   --dark-blue: #293449;
   --light-dark-blue: #3D546F;
+  --social-blue: #212A3A;
   --orange: #FFBF47;
   --ligh-orange: #FFD180;
   --white-orange: #F7F3EC;
@@ -725,7 +726,7 @@ img {
 /* Catalog */
 
 .catalog {
-  margin-bottom: 70px;
+  margin-bottom: 71px;
 }
 
 .catalog .button {
@@ -937,7 +938,7 @@ img {
 /* Services*/
 
 .services {
-  margin-bottom: 70px;
+  margin-bottom: 71px;
   padding-top: 64px;
   padding-bottom: 99px;
   background-color: var(--gray);
@@ -1074,7 +1075,7 @@ img {
 
 .about {
   display: flex;
-  margin-bottom: 69px;
+  margin-bottom: 70px;
 }
 
 .about .title {
@@ -1093,7 +1094,7 @@ img {
 
 .benefits .button {
   padding-top: 11px;
-  padding-right: 43px;
+  padding-right: 42px;
 }
 
 .benefits-list {
@@ -1135,7 +1136,7 @@ img {
 
 .contacts .button {
   width: 100%;
-  margin-top: 17px; 
+  margin-top: 16px; 
 }
 
 .contacts-text {
@@ -1268,12 +1269,18 @@ img {
   margin: 0 118px 0 124px;
 }
 
-.social-link:hover .social-icon path:first-child {
-  fill: var(--light-red);
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--social-blue); 
 }
 
-.social-link:active .social-icon path:first-child {
-  fill: var(--light-red);
+.social-link:hover, .social-link:active, .social-link:focus {
+  background-color: var(--light-red);
 }
 
 .about-block {
@@ -1412,7 +1419,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .filter-form-item:not(:last-of-type) {
