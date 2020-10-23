@@ -40,12 +40,16 @@ feedbackButton.addEventListener("click", function () {
 feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.remove("modal-show");
+  feedbackClose.classList.remove("modal-error");
 });
 
 
 feedbackForm.addEventListener("submit", function (evt) {
   if (!nameField.value || !emailField.value || !messageField.value) {
     evt.preventDefault(messageField.value);
+    feedbackPopup.classList.remove("modal-error");
+    feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+    feedbackPopup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", nameField.value);
@@ -70,6 +74,7 @@ window.addEventListener("keydown", function (evt) {
     if (feedbackForm.classList.contains("modal-show")) {
       evt.preventDefault();
       feedbackForm.classList.remove("modal-show");
+      feedbackPopup.classList.remove("modal-error");
     }
   }
 });
@@ -83,7 +88,7 @@ const arrowRight = document.querySelector(".features-slider-arrow-right");
 const arrowLeft = document.querySelector(".features-slider-arrow-left");
 let count = 1;
 
-arrowRight.onclick = function (slide) {
+arrowRight.addEventListener("click", function (evt) {
   dots[count].classList.remove("active");
   slides[count].classList.remove("active-slide");
   count++;
@@ -92,9 +97,9 @@ arrowRight.onclick = function (slide) {
   }
   dots[count].classList.add("active");
   slides[count].classList.add("active-slide");
-} 
+});
 
-arrowLeft.onclick = function (slide) {
+arrowLeft.addEventListener("click", function (evt) {
   dots[count].classList.remove("active");
   slides[count].classList.remove("active-slide");
   if (count <= 0) {
@@ -103,7 +108,7 @@ arrowLeft.onclick = function (slide) {
   count--;
   dots[count].classList.add("active");
   slides[count].classList.add("active-slide");
-} 
+});
 
 // Добавление товара в корзину и в закладки
 
