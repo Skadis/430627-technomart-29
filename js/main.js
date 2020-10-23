@@ -24,7 +24,8 @@ try {
   isStorageSupport = false;
 }
 
-feedbackButton.addEventListener("click", function () {
+feedbackButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
   feedbackPopup.classList.add("modal-show");
   if (storageName) {
     nameField.value = storageName;
