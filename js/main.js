@@ -80,7 +80,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-// Слайдер
+// Первый слайдер
 
 const slides = document.querySelectorAll(".features-slider-item");
 const dots = document.querySelectorAll(".features-slider-dot");

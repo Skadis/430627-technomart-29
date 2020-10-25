@@ -140,8 +140,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="Изменить минимальное значение цены"></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="Изменить максимальное значание цены"></div>
                   </div>
                   <div class="price-controls">
                     <label class="min-price">
@@ -198,25 +198,20 @@
           <section class="catalog">
             <div class="sort content-title">
               <p class="sort-title catalog-title">Сортировка:</p>
-              <form action="#" method="get" class="sort-form">
                 <ul class="sort-block">
-                  <li class="sort-radio">
-                    <input type="radio" id="price" class="sort-input visually-hidden" name="sort-input" checked>
-                    <label for="price" class="sort-label">По цене</label>
+                  <li class="sort-option">
+                    <a href="#!" class="sort-link sort-active">По цене</a>
                   </li>
-                  <li class="sort-radio">
-                    <input type="radio" id="type" class="sort-input visually-hidden" name="sort-input">
-                    <label for="type" class="sort-label">По типу</label>
+                  <li class="sort-option">
+                    <a href="#!" class="sort-link">По типу</a>
                   </li>
-                  <li class="sort-radio">
-                    <input type="radio" id="functional" class="sort-input visually-hidden" name="sort-input">
-                    <label for="functional" class="sort-label">По функционалу</label>
+                  <li class="sort-option">
+                    <a href="#!" class="sort-link">По функционалу</a>
                   </li>
                 </ul>
-              </form>
               <div class="sort-control">
-                <span class="arrow-up active" tabindex="0"></span>
-                <span class="arrow-down" tabindex="0"></span>
+                <a href="#!" class="arrow-up active" aria-label="Сортировка по возрастанию"></a>
+                <a href="#!" class="arrow-down" aria-label="Сортировка по убыванию"></a>
               </div>
             </div>
             <ul class="catalog-list">
@@ -417,16 +412,16 @@
             </ul>
             <ul class="pagination-list">
               <li class="pagination-item pagination-item-current">
-                <a href="blank.html">1</a>
+                <a href="blank.html" aria-label="Перейти на первую страницу">1</a>
               </li>
               <li class="pagination-item">
-                <a href="blank.html">2</a>
+                <a href="blank.html" aria-label="Перейти на вторую страницу">2</a>
               </li>
               <li class="pagination-item">
-                <a href="blank.html">3</a>
+                <a href="blank.html" aria-label="Перейти на третью страницу">3</a>
               </li>
               <li class="pagination-item">
-                <a href="blank.html">Следующая</a>
+                <a href="blank.html" aria-label="Перейти на следующую страницу">Следующая</a>
               </li>
             </ul>
           </section>
